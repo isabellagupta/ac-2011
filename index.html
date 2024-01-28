@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        .ol-geocoder.gcd-gl-container {
+            top: 65px!important;
+            left: 8px!important;
+        }
+        .ol-touch .ol-geocoder.gcd-gl-container{
+            top: 80px!important;
+        }
+        .ol-geocoder .gcd-gl-btn:after{
+            display:none;
+        }
+        </style>
+<style>
+.search-layer {
+  top: 100px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 130px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/arunachalpradesh_1.js"></script><script src="layers/dadranagarhaveli_2.js"></script><script src="layers/damandiu_3.js"></script><script src="layers/andamannicobarislands_4.js"></script><script src="layers/madhyapradesh_5.js"></script><script src="layers/lakshadweep_6.js"></script><script src="layers/jammukashmir_7.js"></script><script src="layers/andhrapradesh_8.js"></script><script src="layers/tamilnadu_9.js"></script><script src="layers/manipur_10.js"></script><script src="layers/haryana_11.js"></script><script src="layers/himachalpradesh_12.js"></script><script src="layers/gujarat_13.js"></script><script src="layers/sikkim_14.js"></script><script src="layers/uttarpradesh_15.js"></script><script src="layers/delhi_16.js"></script><script src="layers/goa_17.js"></script><script src="layers/punjab_18.js"></script><script src="layers/karnataka_19.js"></script><script src="layers/maharashtra_20.js"></script><script src="layers/westbengal_21.js"></script><script src="layers/orissa_22.js"></script><script src="layers/rajasthan_23.js"></script><script src="layers/chandigarh_24.js"></script><script src="layers/kerala_25.js"></script><script src="layers/chhattisgarh_26.js"></script><script src="layers/tripura_27.js"></script><script src="layers/mizoram_28.js"></script><script src="layers/assam_29.js"></script><script src="layers/meghalaya_30.js"></script><script src="layers/uttarakhand_31.js"></script><script src="layers/puducherry_32.js"></script><script src="layers/bihar_33.js"></script><script src="layers/jharkhand_34.js"></script><script src="layers/nagaland_35.js"></script>
+        <script src="styles/arunachalpradesh_1_style.js"></script><script src="styles/dadranagarhaveli_2_style.js"></script><script src="styles/damandiu_3_style.js"></script><script src="styles/andamannicobarislands_4_style.js"></script><script src="styles/madhyapradesh_5_style.js"></script><script src="styles/lakshadweep_6_style.js"></script><script src="styles/jammukashmir_7_style.js"></script><script src="styles/andhrapradesh_8_style.js"></script><script src="styles/tamilnadu_9_style.js"></script><script src="styles/manipur_10_style.js"></script><script src="styles/haryana_11_style.js"></script><script src="styles/himachalpradesh_12_style.js"></script><script src="styles/gujarat_13_style.js"></script><script src="styles/sikkim_14_style.js"></script><script src="styles/uttarpradesh_15_style.js"></script><script src="styles/delhi_16_style.js"></script><script src="styles/goa_17_style.js"></script><script src="styles/punjab_18_style.js"></script><script src="styles/karnataka_19_style.js"></script><script src="styles/maharashtra_20_style.js"></script><script src="styles/westbengal_21_style.js"></script><script src="styles/orissa_22_style.js"></script><script src="styles/rajasthan_23_style.js"></script><script src="styles/chandigarh_24_style.js"></script><script src="styles/kerala_25_style.js"></script><script src="styles/chhattisgarh_26_style.js"></script><script src="styles/tripura_27_style.js"></script><script src="styles/mizoram_28_style.js"></script><script src="styles/assam_29_style.js"></script><script src="styles/meghalaya_30_style.js"></script><script src="styles/uttarakhand_31_style.js"></script><script src="styles/puducherry_32_style.js"></script><script src="styles/bihar_33_style.js"></script><script src="styles/jharkhand_34_style.js"></script><script src="styles/nagaland_35_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
